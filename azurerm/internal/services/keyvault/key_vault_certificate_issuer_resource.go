@@ -51,17 +51,13 @@ func resourceArmKeyVaultCertificateIssuer() *schema.Resource {
 
 			"org_id": {
 				Type:         schema.TypeString,
-				Required:     true,
+				Optional:     true,
 				ValidateFunc: validation.StringIsNotEmpty,
 			},
 
 			"provider_name": {
 				Type:     schema.TypeString,
 				Required: true,
-				ValidateFunc: validation.StringInSlice([]string{
-					"DigiCert",
-					"GlobalSign",
-				}, false),
 			},
 
 			"account_id": {

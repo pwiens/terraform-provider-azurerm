@@ -46,7 +46,7 @@ The following arguments are supported:
 
 * `name` - (Required) The name which should be used for this Key Vault Certificate Issuer. Changing this forces a new Key Vault Certificate Issuer to be created.
 
-* `org_id` - (Required) The ID of the organization as provided to the issuer. 
+* `org_id` - (Optional) The ID of the organization as provided to the issuer. 
 
 * `account_id` - (Optional) The account number with the third-party Certificate Issuer.
 
